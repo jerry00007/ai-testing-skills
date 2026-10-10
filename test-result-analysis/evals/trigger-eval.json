@@ -1,0 +1,22 @@
+[
+  {"query": "跑一下 pingce 项目的 pytest，看看推荐接口那块测试过了没，上次改完忘了验证了", "should_trigger": true},
+  {"query": "我刚改了 src/recommend/service.py 的排序逻辑，帮我验证下有没有搞坏现有测试", "should_trigger": true},
+  {"query": "CI 跑挂了，帮我看看这个 build log，exit code 1 但是我不确定是哪个测试 failed", "should_trigger": true},
+  {"query": "这个报错什么原因？pytest 跑到一半抛了 ConnectionError，stack trace 在 logs/test-run.log 里", "should_trigger": true},
+  {"query": "bug 改完了，你帮我跑下测试确认下，顺便看看有没有新引入的 failure", "should_trigger": true},
+  {"query": "app-cars 这个项目我两周没碰了，跑下单元测试给我个结论，通过率怎么样", "should_trigger": true},
+  {"query": "验证一下这次重构有没有破坏什么，前后对比下测试结果", "should_trigger": true},
+  {"query": "pytest logs/test_output.log 里有几个 ERROR，帮我分析下是环境问题还是代码问题", "should_trigger": true},
+  {"query": "测试报告出来了，帮我看看哪些是 must-fix 哪些可以忽略，给我个明确结论", "should_trigger": true},
+  {"query": "这次 PR 改了 8 个文件，跑全套测试告诉我有没有 regression", "should_trigger": true},
+  {"query": "帮我写一个 pytest 的测试用例，测试 recommend() 函数在空输入时的行为", "should_trigger": false},
+  {"query": "解释一下这段 Python 代码在做什么，recommend/service.py 第 45 到 80 行", "should_trigger": false},
+  {"query": "帮我搭个 CI pipeline，GitHub Actions 跑 pytest 加 flake8", "should_trigger": false},
+  {"query": "这个测试框架怎么选？pytest 还是 unittest，我们团队用哪个更合适", "should_trigger": false},
+  {"query": "重构 recommend 模块，把 service.py 拆成三个文件，注意保持接口兼容", "should_trigger": false},
+  {"query": "帮我看看这个 PR 的代码质量怎么样，有没有明显的设计问题", "should_trigger": false},
+  {"query": "pytest.ini 怎么配置？我想加个 --maxfail=5 的选项让它失败就停", "should_trigger": false},
+  {"query": "写个脚本批量跑 100 个 URL 的接口测试，结果输出到 csv", "should_trigger": false},
+  {"query": "这个 bug 怎么修？recommend 函数在并发场景下偶尔返回空列表", "should_trigger": false},
+  {"query": "帮我生成这个需求的测试用例，需求文档在 docs/prd.md 里", "should_trigger": false}
+]
